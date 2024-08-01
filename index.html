@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Cloud Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self';">
+</head>
+<body>
+<div class="container">
+    <h1>Word Cloud Generator</h1>
+    <textarea id="word-input" placeholder="Enter words and their values (format: size word, e.g., 90 プログラミング)"></textarea>
+    <br>
+    <label for="font-select">Choose a font:</label>
+    <select id="font-select">
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Noto Sans JP">Noto Sans JP</option>
+        <option value="Yu Gothic">游ゴシック</option>
+        <option value="Meiryo">メイリオ</option>
+        <option value="MS Gothic">MS ゴシック</option>
+        <option value="MS Mincho">MS 明朝</option>
+    </select>
+    <br>
+    <label for="width-input">Width:</label>
+    <input type="number" id="width-input" value="800">
+    <label for="height-input">Height:</label>
+    <input type="number" id="height-input" value="600">
+    <br>
+    <label for="horizontal-only">Horizontal Only:</label>
+    <input type="checkbox" id="horizontal-only" checked>
+    <br>
+    <button id="generate-button">Generate Word Cloud</button>
+    <button id="download-button">Download Word Cloud</button>
+    <div id="word-cloud" class="word-cloud-container">
+        <canvas id="word-cloud-canvas"></canvas>
+    </div>
+</div>
+<script src="wordcloud2.js"></script>
+<script src="script.js" type="module"></script>
+</body>
+</html>

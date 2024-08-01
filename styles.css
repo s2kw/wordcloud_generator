@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+#word-input {
+    width: 80%;
+    height: 100px;
+    margin: 10px 0;
+}
+
+#word-cloud {
+    margin-top: 20px;
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+#word-cloud-canvas {
+    width: 100%;
+    height: 100%;
+}
